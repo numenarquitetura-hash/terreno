@@ -771,6 +771,9 @@ document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
 var zap=document.getElementById('zap');
 zap.addEventListener('input',function(){var v=zap.value.replace(/\D/g,'').slice(0,11);var o='';if(v.length>0)o='('+v.slice(0,2);if(v.length>=3)o+=') '+v.slice(2,3);if(v.length>=4)o+=' '+v.slice(3,7);if(v.length>=8)o+='-'+v.slice(7,11);zap.value=o});
 
+/* sitelinks do Google Ads: ?s=analise, ?s=casos, ?s=processo, ?s=quem levam direto à seção */
+(function(){var s=new URLSearchParams(location.search).get('s');var alvo=s&&/^[a-z-]+$/.test(s)&&document.getElementById(s);if(alvo)addEventListener('load',function(){alvo.scrollIntoView({behavior:'smooth',block:'start'})});})();
+
 /* form */
 var form=document.getElementById('leadForm');
 form.addEventListener('submit',function(ev){
