@@ -21,13 +21,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="img/hero.jpg">
 
-<!-- ======= TAGS (preencher) =======
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<!-- Tag do Google: GA4 do site portodueto.com (G-ZDMEPV694E) e Google Ads (AW-852424625) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDMEPV694E"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','G-XXXXXXX');gtag('config','AW-XXXXXXXXX');
+gtag('js',new Date());gtag('config','G-ZDMEPV694E');gtag('config','AW-852424625');
 </script>
-================================== -->
 
 <script type="application/ld+json">
 [
@@ -802,8 +801,8 @@ form.addEventListener('submit',function(ev){
   document.getElementById('waLink').href=url;
   ok.classList.add('on');
   if(window.gtag)gtag('event','lead_qualificado',{faixa:faixa,regiao:regiao});
-  /* conversão do Google Ads: descomentar e preencher
-  if(window.gtag)gtag('event','conversion',{send_to:'AW-XXXXXXXXX/XXXXXXXX'}); */
+  /* conversão do Google Ads: Lead O Terreno Certo (formulário), só lead qualificado */
+  if(window.gtag)gtag('event','conversion',{send_to:'AW-852424625/0CfuCOrl77wdELHvu5YD'});
   setTimeout(function(){window.open(url,'_blank')},600);
 });
 </script>
